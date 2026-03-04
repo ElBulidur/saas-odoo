@@ -15,6 +15,7 @@ services:
       - odoo-net
 
   odoo:
+    user: "101:101"
     container_name: saas-odoo
     image: odoo:17.0
     restart: always
