@@ -3,3 +3,8 @@ data/
 *.pyc
 __pycache__/
 .DS_Store
+backups/
+data/
+addons/auto_backup
+*.sql.gz
+*.tar.gz
