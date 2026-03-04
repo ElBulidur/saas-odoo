@@ -1,5 +1,6 @@
 services:
   db:
+    container_name: db-odoo
     image: postgres:15-alpine
     restart: always
     command: -p 5441
@@ -14,6 +15,7 @@ services:
       - odoo-net
 
   odoo:
+    container_name: saas-odoo
     image: odoo:17.0
     restart: always
     depends_on:
